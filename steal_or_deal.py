@@ -8,8 +8,9 @@
 #
 import random
 
-list = ["Steal", "Deal"]
+
 player_choice = input("Would you like to play Steal or Deal [y|n]?")
+
 
 if(player_choice == "y"):
 	print("Jackpot: 200")
@@ -17,9 +18,8 @@ if(player_choice == "y"):
 	
 
 	if (choice2 == "s"):
-#		computer_choice = random.choice(list)
+
 		computer_choice = random.randint(1,2)
-#		print(computer_choice)
 		
 		if (computer_choice==1):
 			computer_choice = "Steal"
@@ -28,6 +28,7 @@ if(player_choice == "y"):
 			computer_choice="Deal"
 
 		print("C:  Steal  |  ",computer_choice)
+
 
 	elif (choice2 == "d"):
 		computer_choice = random.randint(1,2)
@@ -39,6 +40,7 @@ if(player_choice == "y"):
 			computer_choice="Deal"
 		print("C:  Deal  |  ",computer_choice)
 
+
 	elif (choice2 == "q"):
 		print("No worries... another time perhaps... :) ")
 
@@ -48,6 +50,7 @@ if(player_choice == "y"):
 
 elif(player_choice == "n"):
 	print("No worries... another time perhaps... :)")
+
 
 else:
 	print("invalid choice")
